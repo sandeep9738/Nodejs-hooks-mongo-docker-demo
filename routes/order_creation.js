@@ -40,6 +40,10 @@ router.post('/creation', function (req, res, next) {
 
         inventory.find({ sku: req.body.sku }, function (err, result) {
             if (err) throw err;
+            if (result.length == 0 ){
+                global.errMsg = "No inventory found";
+                return res.redirect('/orderCreation');
+            }
             console.log("Inventory qty: ", result[0].qty);
             console.log("Req qty: ", req.body.order_qty);
             if (result[0].qty <= 0) {
