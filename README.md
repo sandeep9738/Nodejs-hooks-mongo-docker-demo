@@ -3,7 +3,9 @@ Implementation of Nodejs nested hooks concept and run using local docker install
 
 Setup 
 
-To run this project you should be installed with docker in your machine. 
+To run this project you can do it using docker in your machine.
+
+To run locally use command node bin/www
 
 For installation of docker in ubuntu, go to this link --- https://www.youtube.com/watch?v=sYFDfJ5OdkE.
 
