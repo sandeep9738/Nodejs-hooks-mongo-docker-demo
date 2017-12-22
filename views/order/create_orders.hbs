@@ -1,0 +1,51 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="header">
+            <h4 class="title">Creation of Order</h4>
+            <div id="charge-error" class="alert alert-danger {{#if noErrors}}hidden {{/if}}">
+                {{errMsg}}
+            </div>
+        </div>
+        <div class="content">
+            <form method="POST" action="/order/creation">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Order No.</label>
+                            <input type="number" name="order_no" class="form-control border-input" placeholder="Order No">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">SKU</label>
+                            <input type="number" name="sku" class="form-control border-input" placeholder="SKU">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="text" name="order_qty" class="form-control border-input" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Customer Name</label>
+                            <input type="text" name="customer_name" class="form-control border-input" placeholder="Customer Name">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <button type="submit" class="btn btn-info btn-fill btn-wd">Create Order</button>
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>

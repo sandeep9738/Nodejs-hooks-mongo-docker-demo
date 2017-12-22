@@ -1,0 +1,40 @@
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Order Invoices</h4>
+                        <p class="category">List of Invoices</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                                <th>Order_no</th>
+                                <th>Courier_no</th>
+                                 <th>Item_price</th>
+                                <th>Courier_price</th>
+                                <th>Total_price</th>
+                            </thead>
+                            <tbody>
+                                {{#  each invoices }}
+                                    <tr>
+	                                    <td>{{this.order_no}}</td>
+                                        <td>{{this.courier_no}}</td>
+                                        <td>{{this.item_price}}</td>
+                                        <td>{{this.courier_price}}</td>
+                                        <td>{{this.total_price}}</td>
+
+                                </tr>
+                                {{/ each}}
+                                </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

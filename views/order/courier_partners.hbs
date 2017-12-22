@@ -1,0 +1,39 @@
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Courier Partners</h4>
+                                <p class="category">List of Courier Partners</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Courier_no</th>
+                                    	<th>Courier_Partner</th>
+                                    	<th>Price_Per_Qty</th>
+                                    	<th>isAvailable</th>
+
+                                    </thead>
+                                    <tbody>
+                                         {{#  each couriers }}
+                                        <tr>
+                                        	<td>{{this.courier_no}}</td>
+                                        	<td>{{this.courier_partner}}</td>
+                                        	<td>{{this.price_per_qty}}</td>
+                                        	<td>{{this.isAvailable}}</td>
+
+                                        </tr>
+                                          {{/each}}
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>

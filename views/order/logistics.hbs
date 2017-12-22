@@ -1,0 +1,35 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Order Logistics</h4>
+                        <p class="category">List of orders mapped with courier partners</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                                <th>Order_no</th>
+                                <th>Courier_no</th>
+                                <th>Order Date</th>
+
+                            </thead>
+                            <tbody>
+                                {{# each logistics }}
+                                <tr>
+                                    <td>{{this.order_no}}</td>
+                                    <td>{{this.courier_no}}</td>
+                                    <td>{{this.order_date}}</td>
+                                </tr>
+                                {{/ each}}
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

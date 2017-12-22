@@ -1,0 +1,41 @@
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Orders List</h4>
+                                <p class="category">List of Orders Accepted</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Order_no</th>
+                                    	<th>SKU</th>
+                                    	<th>Order_qty</th>
+                                    	<th>Order Price</th>
+                                        <th>Order Date</th>
+                                    	<th>Customer Name</th>
+                                    </thead>
+                                    <tbody>
+                                         {{#  each orders }}
+                                        <tr>
+                                        	<td>{{this.order_no}}</td>
+                                        	<td>{{this.sku}}</td>
+                                        	<td>{{this.order_qty}}</td>
+                                        	<td>{{this.order_price}}</td>
+                                        	<td>{{this.order_date}}</td>
+                                            <td>{{this.customer_name}}</td>
+                                        </tr>
+                                          {{/each}}
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>

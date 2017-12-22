@@ -1,0 +1,39 @@
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Inventory List</h4>
+                        <p class="category">List of Inventory Stock</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                                <th>SKU</th>
+                                <th>Item</th>
+                                <th>Ouantity</th>
+                                <th>Price</th>
+                            </thead>
+                            <tbody>
+                                {{#  each inventories }}
+                                    <tr>
+
+                                    <td>{{ this.sku }}</td>
+                                    <td>{{ this.item }}</td>
+                                    <td>{{ this.qty }}</td>
+                                    <td>{{ this.price }}</td>
+
+                                </tr>
+                                {{/ each}}
+                                </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
